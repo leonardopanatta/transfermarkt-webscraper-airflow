@@ -1,7 +1,0 @@
-# Airflow
-logs/
-
-# Python
-__pycache__/
-
-.env
