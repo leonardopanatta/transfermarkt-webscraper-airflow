@@ -3238,3 +3238,223 @@
 [2021-05-27 20:28:21,189] {logging_mixin.py:104} INFO - [2021-05-27 20:28:21,189] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
 [2021-05-27 20:28:21,691] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
 [2021-05-27 20:28:21,700] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.516 seconds
+[2021-05-27 20:28:51,730] {scheduler_job.py:182} INFO - Started process (PID=6541) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:28:51,731] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:28:51,731] {logging_mixin.py:104} INFO - [2021-05-27 20:28:51,731] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:28:52,230] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:28:52,239] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.511 seconds
+[2021-05-27 20:29:22,276] {scheduler_job.py:182} INFO - Started process (PID=6629) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:29:22,278] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:29:22,278] {logging_mixin.py:104} INFO - [2021-05-27 20:29:22,278] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:29:22,800] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:29:22,808] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.535 seconds
+[2021-05-27 20:29:53,766] {scheduler_job.py:182} INFO - Started process (PID=6698) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:29:53,769] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:29:53,770] {logging_mixin.py:104} INFO - [2021-05-27 20:29:53,770] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:29:54,250] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:29:54,257] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.498 seconds
+[2021-05-27 20:30:24,479] {scheduler_job.py:182} INFO - Started process (PID=6782) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:30:24,480] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:30:24,481] {logging_mixin.py:104} INFO - [2021-05-27 20:30:24,480] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:30:25,158] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:30:25,170] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.694 seconds
+[2021-05-27 20:30:56,133] {scheduler_job.py:182} INFO - Started process (PID=6863) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:30:56,134] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:30:56,136] {logging_mixin.py:104} INFO - [2021-05-27 20:30:56,135] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:30:56,808] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:30:56,815] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.685 seconds
+[2021-05-27 20:31:26,938] {scheduler_job.py:182} INFO - Started process (PID=6943) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:31:26,939] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:31:26,940] {logging_mixin.py:104} INFO - [2021-05-27 20:31:26,940] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:31:27,435] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:31:27,444] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.509 seconds
+[2021-05-27 20:31:57,473] {scheduler_job.py:182} INFO - Started process (PID=7028) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:31:57,475] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:31:57,476] {logging_mixin.py:104} INFO - [2021-05-27 20:31:57,476] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:31:58,053] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:31:58,063] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.593 seconds
+[2021-05-27 20:32:28,658] {scheduler_job.py:182} INFO - Started process (PID=7095) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:32:28,661] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:32:28,662] {logging_mixin.py:104} INFO - [2021-05-27 20:32:28,662] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:32:29,374] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:32:29,421] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.768 seconds
+[2021-05-27 20:32:59,899] {scheduler_job.py:182} INFO - Started process (PID=7179) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:32:59,900] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:32:59,902] {logging_mixin.py:104} INFO - [2021-05-27 20:32:59,901] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:33:00,597] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:33:00,612] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.715 seconds
+[2021-05-27 20:33:30,966] {scheduler_job.py:182} INFO - Started process (PID=7247) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:33:30,967] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:33:30,968] {logging_mixin.py:104} INFO - [2021-05-27 20:33:30,968] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:33:31,643] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:33:31,655] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.693 seconds
+[2021-05-27 20:34:01,743] {scheduler_job.py:182} INFO - Started process (PID=7335) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:34:01,745] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:34:01,746] {logging_mixin.py:104} INFO - [2021-05-27 20:34:01,746] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:34:02,430] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:34:02,444] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.706 seconds
+[2021-05-27 20:34:32,804] {scheduler_job.py:182} INFO - Started process (PID=7401) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:34:32,806] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:34:32,807] {logging_mixin.py:104} INFO - [2021-05-27 20:34:32,807] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:34:33,329] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:34:33,339] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.542 seconds
+[2021-05-27 20:35:03,581] {scheduler_job.py:182} INFO - Started process (PID=7487) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:35:03,583] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:35:03,584] {logging_mixin.py:104} INFO - [2021-05-27 20:35:03,583] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:35:04,115] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:35:04,133] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.554 seconds
+[2021-05-27 20:35:34,289] {scheduler_job.py:182} INFO - Started process (PID=7564) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:35:34,291] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:35:34,292] {logging_mixin.py:104} INFO - [2021-05-27 20:35:34,291] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:35:34,952] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:35:34,965] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.680 seconds
+[2021-05-27 20:36:05,530] {scheduler_job.py:182} INFO - Started process (PID=7640) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:36:05,536] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:36:05,540] {logging_mixin.py:104} INFO - [2021-05-27 20:36:05,539] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:36:06,399] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:36:06,408] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.891 seconds
+[2021-05-27 20:36:37,118] {scheduler_job.py:182} INFO - Started process (PID=7728) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:36:37,121] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:36:37,122] {logging_mixin.py:104} INFO - [2021-05-27 20:36:37,122] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:36:37,793] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:36:37,820] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.707 seconds
+[2021-05-27 20:37:08,156] {scheduler_job.py:182} INFO - Started process (PID=7796) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:37:08,158] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:37:08,158] {logging_mixin.py:104} INFO - [2021-05-27 20:37:08,158] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:37:08,728] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:37:08,738] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.584 seconds
+[2021-05-27 20:37:39,750] {scheduler_job.py:182} INFO - Started process (PID=7884) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:37:39,752] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:37:39,753] {logging_mixin.py:104} INFO - [2021-05-27 20:37:39,753] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:37:40,222] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:37:40,231] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.490 seconds
+[2021-05-27 20:38:10,309] {scheduler_job.py:182} INFO - Started process (PID=7961) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:38:10,310] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:38:10,310] {logging_mixin.py:104} INFO - [2021-05-27 20:38:10,310] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:38:10,782] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:38:10,792] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.486 seconds
+[2021-05-27 20:38:41,046] {scheduler_job.py:182} INFO - Started process (PID=8036) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:38:41,052] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:38:41,054] {logging_mixin.py:104} INFO - [2021-05-27 20:38:41,053] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:38:41,485] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:38:41,493] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.456 seconds
+[2021-05-27 20:39:11,512] {scheduler_job.py:182} INFO - Started process (PID=8123) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:39:11,512] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:39:11,513] {logging_mixin.py:104} INFO - [2021-05-27 20:39:11,513] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:39:11,930] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:39:11,938] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.428 seconds
+[2021-05-27 20:39:42,145] {scheduler_job.py:182} INFO - Started process (PID=8191) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:39:42,147] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:39:42,147] {logging_mixin.py:104} INFO - [2021-05-27 20:39:42,147] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:39:42,669] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:39:42,680] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.539 seconds
+[2021-05-27 20:40:13,038] {scheduler_job.py:182} INFO - Started process (PID=8275) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:40:13,041] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:40:13,042] {logging_mixin.py:104} INFO - [2021-05-27 20:40:13,042] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:40:13,490] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:40:13,498] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.467 seconds
+[2021-05-27 20:40:43,635] {scheduler_job.py:182} INFO - Started process (PID=8342) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:40:43,636] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:40:43,636] {logging_mixin.py:104} INFO - [2021-05-27 20:40:43,636] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:40:44,277] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:40:44,288] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.657 seconds
+[2021-05-27 20:41:14,402] {scheduler_job.py:182} INFO - Started process (PID=8428) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:41:14,403] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:41:14,404] {logging_mixin.py:104} INFO - [2021-05-27 20:41:14,404] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:41:14,956] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:41:14,965] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.566 seconds
+[2021-05-27 20:41:45,723] {scheduler_job.py:182} INFO - Started process (PID=8513) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:41:45,724] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:41:45,725] {logging_mixin.py:104} INFO - [2021-05-27 20:41:45,725] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:41:46,280] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:41:46,289] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.571 seconds
+[2021-05-27 20:42:16,596] {scheduler_job.py:182} INFO - Started process (PID=8581) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:42:16,597] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:42:16,598] {logging_mixin.py:104} INFO - [2021-05-27 20:42:16,598] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:42:17,059] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:42:17,067] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.473 seconds
+[2021-05-27 20:42:47,220] {scheduler_job.py:182} INFO - Started process (PID=8667) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:42:47,221] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:42:47,221] {logging_mixin.py:104} INFO - [2021-05-27 20:42:47,221] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:42:47,714] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:42:47,721] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.504 seconds
+[2021-05-27 20:43:17,973] {scheduler_job.py:182} INFO - Started process (PID=8733) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:43:17,974] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:43:17,974] {logging_mixin.py:104} INFO - [2021-05-27 20:43:17,974] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:43:18,459] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:43:18,472] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.502 seconds
+[2021-05-27 20:43:49,318] {scheduler_job.py:182} INFO - Started process (PID=8819) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:43:49,320] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:43:49,321] {logging_mixin.py:104} INFO - [2021-05-27 20:43:49,321] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:43:49,763] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:43:49,771] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.457 seconds
+[2021-05-27 20:44:20,119] {scheduler_job.py:182} INFO - Started process (PID=8905) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:44:20,120] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:44:20,120] {logging_mixin.py:104} INFO - [2021-05-27 20:44:20,120] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:44:20,587] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:44:20,597] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.482 seconds
+[2021-05-27 20:44:51,271] {scheduler_job.py:182} INFO - Started process (PID=8972) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:44:51,273] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:44:51,274] {logging_mixin.py:104} INFO - [2021-05-27 20:44:51,274] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:44:51,776] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:44:51,783] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.517 seconds
+[2021-05-27 20:45:21,813] {scheduler_job.py:182} INFO - Started process (PID=9058) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:45:21,814] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:45:21,815] {logging_mixin.py:104} INFO - [2021-05-27 20:45:21,814] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:45:22,295] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:45:22,305] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.496 seconds
+[2021-05-27 20:45:52,716] {scheduler_job.py:182} INFO - Started process (PID=9126) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:45:52,719] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:45:52,721] {logging_mixin.py:104} INFO - [2021-05-27 20:45:52,720] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:45:53,149] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:45:53,157] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.450 seconds
+[2021-05-27 20:46:23,379] {scheduler_job.py:182} INFO - Started process (PID=9210) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:46:23,383] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:46:23,385] {logging_mixin.py:104} INFO - [2021-05-27 20:46:23,385] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:46:23,789] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:46:23,798] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.428 seconds
+[2021-05-27 20:46:54,405] {scheduler_job.py:182} INFO - Started process (PID=9294) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:46:54,406] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:46:54,406] {logging_mixin.py:104} INFO - [2021-05-27 20:46:54,406] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:46:54,845] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:46:54,853] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.451 seconds
+[2021-05-27 20:47:25,019] {scheduler_job.py:182} INFO - Started process (PID=9361) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:47:25,022] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:47:25,024] {logging_mixin.py:104} INFO - [2021-05-27 20:47:25,023] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:47:25,429] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:47:25,437] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.426 seconds
+[2021-05-27 20:47:56,142] {scheduler_job.py:182} INFO - Started process (PID=9445) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:47:56,144] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:47:56,153] {logging_mixin.py:104} INFO - [2021-05-27 20:47:56,152] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:47:56,562] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:47:56,570] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.431 seconds
+[2021-05-27 20:48:26,938] {scheduler_job.py:182} INFO - Started process (PID=9530) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:48:26,939] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:48:26,939] {logging_mixin.py:104} INFO - [2021-05-27 20:48:26,939] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:48:27,354] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:48:27,363] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.427 seconds
+[2021-05-27 20:48:57,628] {scheduler_job.py:182} INFO - Started process (PID=9597) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:48:57,630] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:48:57,630] {logging_mixin.py:104} INFO - [2021-05-27 20:48:57,630] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:48:58,101] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:48:58,110] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.484 seconds
+[2021-05-27 20:49:28,643] {scheduler_job.py:182} INFO - Started process (PID=9681) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:49:28,644] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:49:28,644] {logging_mixin.py:104} INFO - [2021-05-27 20:49:28,644] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:49:29,089] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:49:29,096] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.457 seconds
+[2021-05-27 20:49:59,119] {scheduler_job.py:182} INFO - Started process (PID=9755) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:49:59,119] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:49:59,120] {logging_mixin.py:104} INFO - [2021-05-27 20:49:59,120] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:49:59,548] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:49:59,557] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.440 seconds
+[2021-05-27 20:50:30,253] {scheduler_job.py:182} INFO - Started process (PID=9832) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:50:30,256] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:50:30,258] {logging_mixin.py:104} INFO - [2021-05-27 20:50:30,257] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:50:30,716] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:50:30,723] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.479 seconds
+[2021-05-27 20:51:00,961] {scheduler_job.py:182} INFO - Started process (PID=9916) to work on /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:51:00,964] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py for tasks to queue
+[2021-05-27 20:51:00,965] {logging_mixin.py:104} INFO - [2021-05-27 20:51:00,965] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:51:01,354] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py
+[2021-05-27 20:51:01,361] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/etl_scripts/transfers_scraping_etl.py took 0.409 seconds
