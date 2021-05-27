@@ -1,0 +1,1673 @@
+[2021-05-26 18:07:40,240] {scheduler_job.py:182} INFO - Started process (PID=103813) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:07:40,240] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:07:40,241] {logging_mixin.py:104} INFO - [2021-05-26 18:07:40,241] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:07:40,716] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:07:40,912] {logging_mixin.py:104} INFO - [2021-05-26 18:07:40,911] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:07:40,922] {logging_mixin.py:104} INFO - [2021-05-26 18:07:40,922] {dag.py:2305} INFO - Setting next_dagrun for transfers_scraping to None
+[2021-05-26 18:07:40,934] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.696 seconds
+[2021-05-26 18:08:11,069] {scheduler_job.py:182} INFO - Started process (PID=103887) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:08:11,070] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:08:11,071] {logging_mixin.py:104} INFO - [2021-05-26 18:08:11,071] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:08:11,486] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:08:14,287] {logging_mixin.py:104} INFO - [2021-05-26 18:08:14,286] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:08:14,294] {logging_mixin.py:104} INFO - [2021-05-26 18:08:14,293] {dag.py:1851} INFO - Creating ORM DAG for dag_transfers_scraping
+[2021-05-26 18:08:14,298] {logging_mixin.py:104} INFO - [2021-05-26 18:08:14,298] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:08:14,306] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 3.239 seconds
+[2021-05-26 18:08:44,737] {scheduler_job.py:182} INFO - Started process (PID=104005) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:08:44,738] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:08:44,739] {logging_mixin.py:104} INFO - [2021-05-26 18:08:44,739] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:08:45,125] {logging_mixin.py:104} INFO - [2021-05-26 18:08:45,123] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 44, in <module>
+    start_pipeline >> scrap_transfers >> send_transfers_file_to_S3 >> remove_local_transfers_file >> end_pipeline
+NameError: name 'scrap_transfers' is not defined
+[2021-05-26 18:08:45,125] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:08:45,135] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.401 seconds
+[2021-05-26 18:09:15,410] {scheduler_job.py:182} INFO - Started process (PID=104090) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:09:15,411] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:09:15,411] {logging_mixin.py:104} INFO - [2021-05-26 18:09:15,411] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:09:15,856] {logging_mixin.py:104} INFO - [2021-05-26 18:09:15,856] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 44, in <module>
+    start_pipeline >> scrap_transfers >> send_transfers_file_to_S3 >> remove_local_transfers_file >> end_pipeline
+NameError: name 'scrap_transfers' is not defined
+[2021-05-26 18:09:15,856] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:09:15,866] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.458 seconds
+[2021-05-26 18:09:45,968] {scheduler_job.py:182} INFO - Started process (PID=104157) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:09:45,969] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:09:45,970] {logging_mixin.py:104} INFO - [2021-05-26 18:09:45,970] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:09:46,356] {logging_mixin.py:104} INFO - [2021-05-26 18:09:46,355] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 44, in <module>
+    start_pipeline >> scrap_transfers >> send_transfers_file_to_S3 >> remove_local_transfers_file >> end_pipeline
+NameError: name 'scrap_transfers' is not defined
+[2021-05-26 18:09:46,356] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:09:46,367] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.401 seconds
+[2021-05-26 18:10:16,609] {scheduler_job.py:182} INFO - Started process (PID=104241) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:10:16,611] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:10:16,613] {logging_mixin.py:104} INFO - [2021-05-26 18:10:16,612] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:10:17,011] {logging_mixin.py:104} INFO - [2021-05-26 18:10:17,011] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 44, in <module>
+    start_pipeline >> scrap_transfers >> send_transfers_file_to_S3 >> remove_local_transfers_file >> end_pipeline
+NameError: name 'scrap_transfers' is not defined
+[2021-05-26 18:10:17,011] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:10:17,021] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.421 seconds
+[2021-05-26 18:10:47,614] {scheduler_job.py:182} INFO - Started process (PID=104326) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:10:47,615] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:10:47,616] {logging_mixin.py:104} INFO - [2021-05-26 18:10:47,616] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:10:48,007] {logging_mixin.py:104} INFO - [2021-05-26 18:10:48,007] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 44, in <module>
+    start_pipeline >> scrap_transfers >> send_transfers_file_to_S3 >> remove_local_transfers_file >> end_pipeline
+NameError: name 'scrap_transfers' is not defined
+[2021-05-26 18:10:48,007] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:10:48,017] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.406 seconds
+[2021-05-26 18:11:18,747] {scheduler_job.py:182} INFO - Started process (PID=104410) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:11:18,749] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:11:18,749] {logging_mixin.py:104} INFO - [2021-05-26 18:11:18,749] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:11:19,138] {logging_mixin.py:104} INFO - [2021-05-26 18:11:19,137] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 44, in <module>
+    start_pipeline >> scrap_transfers >> send_transfers_file_to_S3 >> remove_local_transfers_file >> end_pipeline
+NameError: name 'scrap_transfers' is not defined
+[2021-05-26 18:11:19,138] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:11:19,147] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.403 seconds
+[2021-05-26 18:11:49,572] {scheduler_job.py:182} INFO - Started process (PID=104477) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:11:49,573] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:11:49,573] {logging_mixin.py:104} INFO - [2021-05-26 18:11:49,573] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:11:49,964] {logging_mixin.py:104} INFO - [2021-05-26 18:11:49,964] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 44, in <module>
+    start_pipeline >> scrap_transfers >> send_transfers_file_to_S3 >> remove_local_transfers_file >> end_pipeline
+NameError: name 'scrap_transfers' is not defined
+[2021-05-26 18:11:49,965] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:11:49,976] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.405 seconds
+[2021-05-26 18:12:20,066] {scheduler_job.py:182} INFO - Started process (PID=104561) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:12:20,066] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:12:20,067] {logging_mixin.py:104} INFO - [2021-05-26 18:12:20,067] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:12:20,459] {logging_mixin.py:104} INFO - [2021-05-26 18:12:20,459] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 44, in <module>
+    start_pipeline >> scrap_transfers >> send_transfers_file_to_S3 >> remove_local_transfers_file >> end_pipeline
+NameError: name 'scrap_transfers' is not defined
+[2021-05-26 18:12:20,459] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:12:20,470] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.406 seconds
+[2021-05-26 18:12:50,768] {scheduler_job.py:182} INFO - Started process (PID=104646) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:12:50,768] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:12:50,769] {logging_mixin.py:104} INFO - [2021-05-26 18:12:50,769] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:12:50,845] {logging_mixin.py:104} INFO - [2021-05-26 18:12:50,845] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+  File "/opt/airflow/dags/etl_scripts/transfers.py", line 9
+    def transfers_scraping():
+      ^
+IndentationError: expected an indented block
+[2021-05-26 18:12:50,846] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:12:50,859] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.093 seconds
+[2021-05-26 18:13:21,119] {scheduler_job.py:182} INFO - Started process (PID=104714) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:13:21,122] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:13:21,124] {logging_mixin.py:104} INFO - [2021-05-26 18:13:21,123] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:13:21,214] {logging_mixin.py:104} INFO - [2021-05-26 18:13:21,214] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+  File "/opt/airflow/dags/etl_scripts/transfers.py", line 9
+    def scrape_transfers():
+      ^
+IndentationError: expected an indented block
+[2021-05-26 18:13:21,215] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:13:21,228] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.118 seconds
+[2021-05-26 18:13:51,464] {scheduler_job.py:182} INFO - Started process (PID=104798) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:13:51,466] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:13:51,468] {logging_mixin.py:104} INFO - [2021-05-26 18:13:51,467] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:13:51,910] {logging_mixin.py:104} INFO - [2021-05-26 18:13:51,910] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ImportError: cannot import name 'transfers_scraping'
+[2021-05-26 18:13:51,910] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:13:51,920] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.464 seconds
+[2021-05-26 18:14:22,089] {scheduler_job.py:182} INFO - Started process (PID=104876) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:14:22,090] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:14:22,090] {logging_mixin.py:104} INFO - [2021-05-26 18:14:22,090] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:14:22,488] {logging_mixin.py:104} INFO - [2021-05-26 18:14:22,487] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ImportError: cannot import name 'transfers_scraping'
+[2021-05-26 18:14:22,488] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:14:22,498] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.411 seconds
+[2021-05-26 18:14:52,699] {scheduler_job.py:182} INFO - Started process (PID=104950) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:14:52,700] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:14:52,701] {logging_mixin.py:104} INFO - [2021-05-26 18:14:52,701] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:14:53,074] {logging_mixin.py:104} INFO - [2021-05-26 18:14:53,074] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ImportError: cannot import name 'transfers_scraping'
+[2021-05-26 18:14:53,074] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:14:53,084] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.387 seconds
+[2021-05-26 18:15:23,431] {scheduler_job.py:182} INFO - Started process (PID=105034) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:15:23,432] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:15:23,433] {logging_mixin.py:104} INFO - [2021-05-26 18:15:23,432] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:15:23,820] {logging_mixin.py:104} INFO - [2021-05-26 18:15:23,819] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ImportError: cannot import name 'transfers_scraping'
+[2021-05-26 18:15:23,820] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:15:23,831] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.402 seconds
+[2021-05-26 18:15:53,921] {scheduler_job.py:182} INFO - Started process (PID=105112) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:15:53,922] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:15:53,922] {logging_mixin.py:104} INFO - [2021-05-26 18:15:53,922] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:15:54,397] {logging_mixin.py:104} INFO - [2021-05-26 18:15:54,397] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ImportError: cannot import name 'transfers_scraping'
+[2021-05-26 18:15:54,397] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:15:54,410] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.490 seconds
+[2021-05-26 18:16:24,542] {scheduler_job.py:182} INFO - Started process (PID=105187) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:16:24,543] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:16:24,543] {logging_mixin.py:104} INFO - [2021-05-26 18:16:24,543] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:16:24,932] {logging_mixin.py:104} INFO - [2021-05-26 18:16:24,931] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ImportError: cannot import name 'transfers_scraping'
+[2021-05-26 18:16:24,932] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:16:24,943] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.403 seconds
+[2021-05-26 18:16:55,321] {scheduler_job.py:182} INFO - Started process (PID=105271) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:16:55,322] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:16:55,322] {logging_mixin.py:104} INFO - [2021-05-26 18:16:55,322] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:16:55,729] {logging_mixin.py:104} INFO - [2021-05-26 18:16:55,728] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ImportError: cannot import name 'transfers_scraping'
+[2021-05-26 18:16:55,729] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:16:55,742] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.424 seconds
+[2021-05-26 18:17:25,823] {scheduler_job.py:182} INFO - Started process (PID=105348) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:17:25,823] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:17:25,824] {logging_mixin.py:104} INFO - [2021-05-26 18:17:25,824] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:17:26,268] {logging_mixin.py:104} INFO - [2021-05-26 18:17:26,267] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ImportError: cannot import name 'transfers_scraping'
+[2021-05-26 18:17:26,268] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:17:26,281] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.460 seconds
+[2021-05-26 18:17:56,544] {scheduler_job.py:182} INFO - Started process (PID=105422) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:17:56,547] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:17:56,550] {logging_mixin.py:104} INFO - [2021-05-26 18:17:56,549] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:17:57,029] {logging_mixin.py:104} INFO - [2021-05-26 18:17:57,029] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ImportError: cannot import name 'transfers_scraping'
+[2021-05-26 18:17:57,029] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:17:57,039] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.503 seconds
+[2021-05-26 18:18:27,967] {scheduler_job.py:182} INFO - Started process (PID=105507) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:18:27,970] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:18:27,972] {logging_mixin.py:104} INFO - [2021-05-26 18:18:27,971] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:18:28,375] {logging_mixin.py:104} INFO - [2021-05-26 18:18:28,375] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ImportError: cannot import name 'transfers_scraping'
+[2021-05-26 18:18:28,375] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:18:28,385] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.425 seconds
+[2021-05-26 18:18:58,489] {scheduler_job.py:182} INFO - Started process (PID=105591) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:18:58,491] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:18:58,493] {logging_mixin.py:104} INFO - [2021-05-26 18:18:58,493] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:18:58,581] {logging_mixin.py:104} INFO - [2021-05-26 18:18:58,581] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:18:58,582] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:18:58,594] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.111 seconds
+[2021-05-26 18:19:29,108] {scheduler_job.py:182} INFO - Started process (PID=105659) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:19:29,111] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:19:29,113] {logging_mixin.py:104} INFO - [2021-05-26 18:19:29,113] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:19:29,203] {logging_mixin.py:104} INFO - [2021-05-26 18:19:29,202] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:19:29,203] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:19:29,215] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.116 seconds
+[2021-05-26 18:19:59,868] {scheduler_job.py:182} INFO - Started process (PID=105744) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:19:59,873] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:19:59,875] {logging_mixin.py:104} INFO - [2021-05-26 18:19:59,874] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:19:59,964] {logging_mixin.py:104} INFO - [2021-05-26 18:19:59,963] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:19:59,964] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:19:59,976] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.116 seconds
+[2021-05-26 18:20:30,450] {scheduler_job.py:182} INFO - Started process (PID=105821) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:20:30,450] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:20:30,451] {logging_mixin.py:104} INFO - [2021-05-26 18:20:30,451] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:20:30,535] {logging_mixin.py:104} INFO - [2021-05-26 18:20:30,535] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:20:30,537] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:20:30,549] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.101 seconds
+[2021-05-26 18:21:00,955] {scheduler_job.py:182} INFO - Started process (PID=105896) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:21:00,956] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:21:00,956] {logging_mixin.py:104} INFO - [2021-05-26 18:21:00,956] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:21:01,030] {logging_mixin.py:104} INFO - [2021-05-26 18:21:01,029] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:21:01,030] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:21:01,043] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.090 seconds
+[2021-05-26 18:21:31,432] {scheduler_job.py:182} INFO - Started process (PID=105980) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:21:31,433] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:21:31,433] {logging_mixin.py:104} INFO - [2021-05-26 18:21:31,433] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:21:31,508] {logging_mixin.py:104} INFO - [2021-05-26 18:21:31,508] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:21:31,509] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:21:31,522] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.093 seconds
+[2021-05-26 18:22:01,898] {scheduler_job.py:182} INFO - Started process (PID=106065) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:22:01,899] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:22:01,899] {logging_mixin.py:104} INFO - [2021-05-26 18:22:01,899] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:22:02,018] {logging_mixin.py:104} INFO - [2021-05-26 18:22:02,017] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:22:02,018] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:22:02,031] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.135 seconds
+[2021-05-26 18:22:32,485] {scheduler_job.py:182} INFO - Started process (PID=106133) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:22:32,486] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:22:32,487] {logging_mixin.py:104} INFO - [2021-05-26 18:22:32,486] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:22:32,565] {logging_mixin.py:104} INFO - [2021-05-26 18:22:32,565] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:22:32,566] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:22:32,578] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.096 seconds
+[2021-05-26 18:23:03,014] {scheduler_job.py:182} INFO - Started process (PID=106217) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:23:03,015] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:23:03,016] {logging_mixin.py:104} INFO - [2021-05-26 18:23:03,016] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:23:03,095] {logging_mixin.py:104} INFO - [2021-05-26 18:23:03,095] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:23:03,095] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:23:03,108] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.097 seconds
+[2021-05-26 18:23:33,488] {scheduler_job.py:182} INFO - Started process (PID=106303) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:23:33,493] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:23:33,493] {logging_mixin.py:104} INFO - [2021-05-26 18:23:33,493] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:23:33,564] {logging_mixin.py:104} INFO - [2021-05-26 18:23:33,564] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:23:33,565] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:23:33,577] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.091 seconds
+[2021-05-26 18:24:03,995] {scheduler_job.py:182} INFO - Started process (PID=106370) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:24:03,996] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:24:03,996] {logging_mixin.py:104} INFO - [2021-05-26 18:24:03,996] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:24:04,075] {logging_mixin.py:104} INFO - [2021-05-26 18:24:04,074] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:24:04,075] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:24:04,087] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.095 seconds
+[2021-05-26 18:24:34,650] {scheduler_job.py:182} INFO - Started process (PID=106454) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:24:34,651] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:24:34,651] {logging_mixin.py:104} INFO - [2021-05-26 18:24:34,651] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:24:34,726] {logging_mixin.py:104} INFO - [2021-05-26 18:24:34,725] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:24:34,726] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:24:34,739] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.092 seconds
+[2021-05-26 18:25:05,234] {scheduler_job.py:182} INFO - Started process (PID=106539) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:25:05,237] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:25:05,237] {logging_mixin.py:104} INFO - [2021-05-26 18:25:05,237] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:25:05,311] {logging_mixin.py:104} INFO - [2021-05-26 18:25:05,310] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:25:05,311] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:25:05,324] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.093 seconds
+[2021-05-26 18:25:35,802] {scheduler_job.py:182} INFO - Started process (PID=106608) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:25:35,805] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:25:35,807] {logging_mixin.py:104} INFO - [2021-05-26 18:25:35,807] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:25:35,896] {logging_mixin.py:104} INFO - [2021-05-26 18:25:35,896] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:25:35,897] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:25:35,909] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.114 seconds
+[2021-05-26 18:26:06,250] {scheduler_job.py:182} INFO - Started process (PID=106695) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:26:06,251] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:26:06,252] {logging_mixin.py:104} INFO - [2021-05-26 18:26:06,252] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:26:06,332] {logging_mixin.py:104} INFO - [2021-05-26 18:26:06,332] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:26:06,333] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:26:06,345] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.097 seconds
+[2021-05-26 18:26:36,680] {scheduler_job.py:182} INFO - Started process (PID=106780) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:26:36,681] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:26:36,681] {logging_mixin.py:104} INFO - [2021-05-26 18:26:36,681] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:26:36,763] {logging_mixin.py:104} INFO - [2021-05-26 18:26:36,763] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:26:36,763] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:26:36,776] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.100 seconds
+[2021-05-26 18:27:07,389] {scheduler_job.py:182} INFO - Started process (PID=106849) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:27:07,392] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:27:07,394] {logging_mixin.py:104} INFO - [2021-05-26 18:27:07,393] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:27:07,485] {logging_mixin.py:104} INFO - [2021-05-26 18:27:07,484] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:27:07,485] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:27:07,511] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.130 seconds
+[2021-05-26 18:27:38,132] {scheduler_job.py:182} INFO - Started process (PID=106933) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:27:38,133] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:27:38,133] {logging_mixin.py:104} INFO - [2021-05-26 18:27:38,133] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:27:38,210] {logging_mixin.py:104} INFO - [2021-05-26 18:27:38,210] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:27:38,211] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:27:38,224] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.095 seconds
+[2021-05-26 18:28:08,770] {scheduler_job.py:182} INFO - Started process (PID=107017) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:28:08,770] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:28:08,771] {logging_mixin.py:104} INFO - [2021-05-26 18:28:08,771] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:28:08,831] {logging_mixin.py:104} INFO - [2021-05-26 18:28:08,831] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:28:08,831] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:28:08,844] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.076 seconds
+[2021-05-26 18:28:39,260] {scheduler_job.py:182} INFO - Started process (PID=107085) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:28:39,261] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:28:39,261] {logging_mixin.py:104} INFO - [2021-05-26 18:28:39,261] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:28:39,334] {logging_mixin.py:104} INFO - [2021-05-26 18:28:39,333] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:28:39,334] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:28:39,347] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.090 seconds
+[2021-05-26 18:29:09,915] {scheduler_job.py:182} INFO - Started process (PID=107170) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:29:09,918] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:29:09,920] {logging_mixin.py:104} INFO - [2021-05-26 18:29:09,919] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:29:10,018] {logging_mixin.py:104} INFO - [2021-05-26 18:29:10,017] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:29:10,019] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:29:10,031] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.124 seconds
+[2021-05-26 18:29:40,371] {scheduler_job.py:182} INFO - Started process (PID=107254) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:29:40,373] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:29:40,374] {logging_mixin.py:104} INFO - [2021-05-26 18:29:40,374] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:29:40,481] {logging_mixin.py:104} INFO - [2021-05-26 18:29:40,481] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:29:40,481] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:29:40,493] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.124 seconds
+[2021-05-26 18:30:10,919] {scheduler_job.py:182} INFO - Started process (PID=107321) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:30:10,920] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:30:10,921] {logging_mixin.py:104} INFO - [2021-05-26 18:30:10,920] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:30:11,004] {logging_mixin.py:104} INFO - [2021-05-26 18:30:11,004] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:30:11,005] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:30:11,018] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.102 seconds
+[2021-05-26 18:30:41,363] {scheduler_job.py:182} INFO - Started process (PID=107406) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:30:41,364] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:30:41,364] {logging_mixin.py:104} INFO - [2021-05-26 18:30:41,364] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:30:41,441] {logging_mixin.py:104} INFO - [2021-05-26 18:30:41,440] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:30:41,441] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:30:41,453] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.093 seconds
+[2021-05-26 18:31:11,773] {scheduler_job.py:182} INFO - Started process (PID=107491) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:31:11,774] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:31:11,774] {logging_mixin.py:104} INFO - [2021-05-26 18:31:11,774] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:31:11,872] {logging_mixin.py:104} INFO - [2021-05-26 18:31:11,872] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:31:11,873] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:31:11,891] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.120 seconds
+[2021-05-26 18:31:42,320] {scheduler_job.py:182} INFO - Started process (PID=107559) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:31:42,320] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:31:42,321] {logging_mixin.py:104} INFO - [2021-05-26 18:31:42,321] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:31:42,394] {logging_mixin.py:104} INFO - [2021-05-26 18:31:42,394] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:31:42,395] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:31:42,407] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.090 seconds
+[2021-05-26 18:32:12,763] {scheduler_job.py:182} INFO - Started process (PID=107644) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:32:12,764] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:32:12,764] {logging_mixin.py:104} INFO - [2021-05-26 18:32:12,764] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:32:12,838] {logging_mixin.py:104} INFO - [2021-05-26 18:32:12,837] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:32:12,838] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:32:12,851] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.090 seconds
+[2021-05-26 18:32:43,256] {scheduler_job.py:182} INFO - Started process (PID=107720) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:32:43,257] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:32:43,257] {logging_mixin.py:104} INFO - [2021-05-26 18:32:43,257] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:32:43,329] {logging_mixin.py:104} INFO - [2021-05-26 18:32:43,329] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:32:43,329] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:32:43,343] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.089 seconds
+[2021-05-26 18:33:13,941] {scheduler_job.py:182} INFO - Started process (PID=107794) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:33:13,942] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:33:13,943] {logging_mixin.py:104} INFO - [2021-05-26 18:33:13,943] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:33:14,021] {logging_mixin.py:104} INFO - [2021-05-26 18:33:14,020] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:33:14,021] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:33:14,032] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.095 seconds
+[2021-05-26 18:33:44,392] {scheduler_job.py:182} INFO - Started process (PID=107879) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:33:44,393] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:33:44,393] {logging_mixin.py:104} INFO - [2021-05-26 18:33:44,393] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:33:44,467] {logging_mixin.py:104} INFO - [2021-05-26 18:33:44,466] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:33:44,467] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:33:44,480] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.091 seconds
+[2021-05-26 18:34:14,919] {scheduler_job.py:182} INFO - Started process (PID=107957) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:34:14,919] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:34:14,920] {logging_mixin.py:104} INFO - [2021-05-26 18:34:14,919] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:34:15,004] {logging_mixin.py:104} INFO - [2021-05-26 18:34:15,003] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:34:15,004] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:34:15,017] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.100 seconds
+[2021-05-26 18:34:45,349] {scheduler_job.py:182} INFO - Started process (PID=108032) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:34:45,351] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:34:45,353] {logging_mixin.py:104} INFO - [2021-05-26 18:34:45,352] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:34:45,444] {logging_mixin.py:104} INFO - [2021-05-26 18:34:45,444] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:34:45,445] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:34:45,457] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.115 seconds
+[2021-05-26 18:35:15,780] {scheduler_job.py:182} INFO - Started process (PID=108117) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:35:15,781] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:35:15,781] {logging_mixin.py:104} INFO - [2021-05-26 18:35:15,781] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:35:15,857] {logging_mixin.py:104} INFO - [2021-05-26 18:35:15,856] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:35:15,857] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:35:15,869] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.091 seconds
+[2021-05-26 18:35:46,240] {scheduler_job.py:182} INFO - Started process (PID=108194) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:35:46,240] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:35:46,241] {logging_mixin.py:104} INFO - [2021-05-26 18:35:46,241] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:35:46,311] {logging_mixin.py:104} INFO - [2021-05-26 18:35:46,311] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:35:46,311] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:35:46,324] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.086 seconds
+[2021-05-26 18:36:16,505] {scheduler_job.py:182} INFO - Started process (PID=108269) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:36:16,505] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:36:16,506] {logging_mixin.py:104} INFO - [2021-05-26 18:36:16,506] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:36:16,564] {logging_mixin.py:104} INFO - [2021-05-26 18:36:16,564] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:36:16,564] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:36:16,575] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.072 seconds
+[2021-05-26 18:36:46,833] {scheduler_job.py:182} INFO - Started process (PID=108353) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:36:46,834] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:36:46,834] {logging_mixin.py:104} INFO - [2021-05-26 18:36:46,834] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:36:46,910] {logging_mixin.py:104} INFO - [2021-05-26 18:36:46,909] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:36:46,910] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:36:46,922] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.093 seconds
+[2021-05-26 18:37:17,228] {scheduler_job.py:182} INFO - Started process (PID=108431) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:37:17,229] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:37:17,229] {logging_mixin.py:104} INFO - [2021-05-26 18:37:17,229] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:37:17,316] {logging_mixin.py:104} INFO - [2021-05-26 18:37:17,315] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:37:17,316] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:37:17,328] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.102 seconds
+[2021-05-26 18:37:47,778] {scheduler_job.py:182} INFO - Started process (PID=108505) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:37:47,781] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:37:47,783] {logging_mixin.py:104} INFO - [2021-05-26 18:37:47,782] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:37:47,874] {logging_mixin.py:104} INFO - [2021-05-26 18:37:47,873] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:37:47,874] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:37:47,886] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.115 seconds
+[2021-05-26 18:38:18,147] {scheduler_job.py:182} INFO - Started process (PID=108589) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:38:18,148] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:38:18,149] {logging_mixin.py:104} INFO - [2021-05-26 18:38:18,149] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:38:18,224] {logging_mixin.py:104} INFO - [2021-05-26 18:38:18,224] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:38:18,225] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:38:18,238] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.093 seconds
+[2021-05-26 18:38:48,620] {scheduler_job.py:182} INFO - Started process (PID=108667) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:38:48,621] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:38:48,621] {logging_mixin.py:104} INFO - [2021-05-26 18:38:48,621] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:38:48,694] {logging_mixin.py:104} INFO - [2021-05-26 18:38:48,694] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:38:48,694] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:38:48,707] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.089 seconds
+[2021-05-26 18:39:19,204] {scheduler_job.py:182} INFO - Started process (PID=108743) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:39:19,207] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:39:19,208] {logging_mixin.py:104} INFO - [2021-05-26 18:39:19,208] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:39:19,303] {logging_mixin.py:104} INFO - [2021-05-26 18:39:19,302] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:39:19,303] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:39:19,314] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.118 seconds
+[2021-05-26 18:39:49,676] {scheduler_job.py:182} INFO - Started process (PID=108829) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:39:49,679] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:39:49,680] {logging_mixin.py:104} INFO - [2021-05-26 18:39:49,680] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:39:49,770] {logging_mixin.py:104} INFO - [2021-05-26 18:39:49,769] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:39:49,770] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:39:49,782] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.113 seconds
+[2021-05-26 18:40:20,158] {scheduler_job.py:182} INFO - Started process (PID=108907) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:40:20,159] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:40:20,159] {logging_mixin.py:104} INFO - [2021-05-26 18:40:20,159] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:40:20,218] {logging_mixin.py:104} INFO - [2021-05-26 18:40:20,217] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:40:20,218] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:40:20,230] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.073 seconds
+[2021-05-26 18:40:50,612] {scheduler_job.py:182} INFO - Started process (PID=108982) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:40:50,613] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:40:50,613] {logging_mixin.py:104} INFO - [2021-05-26 18:40:50,613] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:40:50,699] {logging_mixin.py:104} INFO - [2021-05-26 18:40:50,699] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:40:50,699] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:40:50,712] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.102 seconds
+[2021-05-26 18:41:21,008] {scheduler_job.py:182} INFO - Started process (PID=109067) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:41:21,009] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:41:21,009] {logging_mixin.py:104} INFO - [2021-05-26 18:41:21,009] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:41:21,084] {logging_mixin.py:104} INFO - [2021-05-26 18:41:21,083] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:41:21,084] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:41:21,097] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.092 seconds
+[2021-05-26 18:41:51,126] {scheduler_job.py:182} INFO - Started process (PID=109145) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:41:51,127] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:41:51,127] {logging_mixin.py:104} INFO - [2021-05-26 18:41:51,127] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:41:51,187] {logging_mixin.py:104} INFO - [2021-05-26 18:41:51,186] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:41:51,187] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:41:51,198] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.074 seconds
+[2021-05-26 18:42:21,503] {scheduler_job.py:182} INFO - Started process (PID=109220) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:42:21,504] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:42:21,504] {logging_mixin.py:104} INFO - [2021-05-26 18:42:21,504] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:42:21,592] {logging_mixin.py:104} INFO - [2021-05-26 18:42:21,592] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:42:21,593] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:42:21,605] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.105 seconds
+[2021-05-26 18:42:52,079] {scheduler_job.py:182} INFO - Started process (PID=109305) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:42:52,080] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:42:52,080] {logging_mixin.py:104} INFO - [2021-05-26 18:42:52,080] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:42:52,155] {logging_mixin.py:104} INFO - [2021-05-26 18:42:52,154] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:42:52,155] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:42:52,168] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.092 seconds
+[2021-05-26 18:43:22,814] {scheduler_job.py:182} INFO - Started process (PID=109382) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:43:22,815] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:43:22,815] {logging_mixin.py:104} INFO - [2021-05-26 18:43:22,815] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:43:22,889] {logging_mixin.py:104} INFO - [2021-05-26 18:43:22,888] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 8, in <module>
+    from etl_scripts.transfers import transfers_scraping
+ModuleNotFoundError: No module named 'etl_scripts.transfers'
+[2021-05-26 18:43:22,889] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:43:22,900] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.087 seconds
+[2021-05-26 18:43:53,787] {scheduler_job.py:182} INFO - Started process (PID=109457) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:43:53,789] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:43:53,791] {logging_mixin.py:104} INFO - [2021-05-26 18:43:53,791] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:43:54,255] {logging_mixin.py:104} INFO - [2021-05-26 18:43:54,254] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 27, in <module>
+    python_callable=transfers_scraping_etl.scrape_transfers
+NameError: name 'transfers_scraping_etl' is not defined
+[2021-05-26 18:43:54,255] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:43:54,268] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.490 seconds
+[2021-05-26 18:44:25,014] {scheduler_job.py:182} INFO - Started process (PID=109544) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:44:25,015] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:44:25,015] {logging_mixin.py:104} INFO - [2021-05-26 18:44:25,015] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:44:25,425] {logging_mixin.py:104} INFO - [2021-05-26 18:44:25,425] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 27, in <module>
+    python_callable=transfers_scraping_etl.scrape_transfers
+NameError: name 'transfers_scraping_etl' is not defined
+[2021-05-26 18:44:25,426] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:44:25,435] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.423 seconds
+[2021-05-26 18:44:56,051] {scheduler_job.py:182} INFO - Started process (PID=109629) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:44:56,054] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:44:56,054] {logging_mixin.py:104} INFO - [2021-05-26 18:44:56,054] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:44:56,454] {logging_mixin.py:104} INFO - [2021-05-26 18:44:56,454] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 27, in <module>
+    python_callable=transfers_scraping_etl.scrape_transfers
+NameError: name 'transfers_scraping_etl' is not defined
+[2021-05-26 18:44:56,455] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:44:56,465] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.417 seconds
+[2021-05-26 18:45:27,117] {scheduler_job.py:182} INFO - Started process (PID=109696) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:45:27,120] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:45:27,121] {logging_mixin.py:104} INFO - [2021-05-26 18:45:27,121] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:45:27,523] {logging_mixin.py:104} INFO - [2021-05-26 18:45:27,523] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/dag_transfers_scraping.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_transfers_scraping.py", line 47, in <module>
+    start_pipeline >> scrap_transfers >> send_transfers_file_to_S3 >> remove_local_transfers_file >> end_pipeline
+NameError: name 'scrap_transfers' is not defined
+[2021-05-26 18:45:27,523] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:45:27,532] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.422 seconds
+[2021-05-26 18:45:58,059] {scheduler_job.py:182} INFO - Started process (PID=109780) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:45:58,062] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:45:58,064] {logging_mixin.py:104} INFO - [2021-05-26 18:45:58,064] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:45:58,575] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:45:58,823] {logging_mixin.py:104} INFO - [2021-05-26 18:45:58,822] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:45:58,833] {logging_mixin.py:104} INFO - [2021-05-26 18:45:58,833] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:45:58,846] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.796 seconds
+[2021-05-26 18:46:29,185] {scheduler_job.py:182} INFO - Started process (PID=109866) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:46:29,186] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:46:29,186] {logging_mixin.py:104} INFO - [2021-05-26 18:46:29,186] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:46:29,552] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:46:29,563] {logging_mixin.py:104} INFO - [2021-05-26 18:46:29,563] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:46:29,569] {logging_mixin.py:104} INFO - [2021-05-26 18:46:29,569] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:46:29,576] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.392 seconds
+[2021-05-26 18:46:59,887] {scheduler_job.py:182} INFO - Started process (PID=109933) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:46:59,888] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:46:59,888] {logging_mixin.py:104} INFO - [2021-05-26 18:46:59,888] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:47:00,281] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:47:00,295] {logging_mixin.py:104} INFO - [2021-05-26 18:47:00,295] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:47:00,302] {logging_mixin.py:104} INFO - [2021-05-26 18:47:00,302] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:47:00,310] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.424 seconds
+[2021-05-26 18:47:30,505] {scheduler_job.py:182} INFO - Started process (PID=110017) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:47:30,506] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:47:30,507] {logging_mixin.py:104} INFO - [2021-05-26 18:47:30,507] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:47:30,904] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:47:30,916] {logging_mixin.py:104} INFO - [2021-05-26 18:47:30,916] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:47:30,924] {logging_mixin.py:104} INFO - [2021-05-26 18:47:30,924] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:47:30,937] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.434 seconds
+[2021-05-26 18:48:01,071] {scheduler_job.py:182} INFO - Started process (PID=110102) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:48:01,071] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:48:01,072] {logging_mixin.py:104} INFO - [2021-05-26 18:48:01,072] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:48:01,460] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:48:01,474] {logging_mixin.py:104} INFO - [2021-05-26 18:48:01,474] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:48:01,483] {logging_mixin.py:104} INFO - [2021-05-26 18:48:01,483] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:48:01,492] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.423 seconds
+[2021-05-26 18:48:31,589] {scheduler_job.py:182} INFO - Started process (PID=110170) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:48:31,591] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:48:31,591] {logging_mixin.py:104} INFO - [2021-05-26 18:48:31,591] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:48:31,983] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:48:31,994] {logging_mixin.py:104} INFO - [2021-05-26 18:48:31,994] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:48:32,000] {logging_mixin.py:104} INFO - [2021-05-26 18:48:32,000] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:48:32,007] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.420 seconds
+[2021-05-26 18:49:02,098] {scheduler_job.py:182} INFO - Started process (PID=110254) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:49:02,099] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:49:02,100] {logging_mixin.py:104} INFO - [2021-05-26 18:49:02,100] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:49:02,489] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:49:02,500] {logging_mixin.py:104} INFO - [2021-05-26 18:49:02,500] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:49:02,506] {logging_mixin.py:104} INFO - [2021-05-26 18:49:02,506] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:49:02,513] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.417 seconds
+[2021-05-26 18:49:32,774] {scheduler_job.py:182} INFO - Started process (PID=110338) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:49:32,775] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:49:32,775] {logging_mixin.py:104} INFO - [2021-05-26 18:49:32,775] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:49:33,184] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:49:33,197] {logging_mixin.py:104} INFO - [2021-05-26 18:49:33,197] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:49:33,205] {logging_mixin.py:104} INFO - [2021-05-26 18:49:33,205] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:49:33,212] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.439 seconds
+[2021-05-26 18:50:03,339] {scheduler_job.py:182} INFO - Started process (PID=110405) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:50:03,344] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:50:03,346] {logging_mixin.py:104} INFO - [2021-05-26 18:50:03,346] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:50:03,748] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:50:03,758] {logging_mixin.py:104} INFO - [2021-05-26 18:50:03,758] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:50:03,764] {logging_mixin.py:104} INFO - [2021-05-26 18:50:03,764] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:50:03,771] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.440 seconds
+[2021-05-26 18:50:33,928] {scheduler_job.py:182} INFO - Started process (PID=110490) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:50:33,929] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:50:33,930] {logging_mixin.py:104} INFO - [2021-05-26 18:50:33,930] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:50:34,400] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:50:34,415] {logging_mixin.py:104} INFO - [2021-05-26 18:50:34,415] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:50:34,424] {logging_mixin.py:104} INFO - [2021-05-26 18:50:34,424] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:50:34,433] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.510 seconds
+[2021-05-26 18:51:04,466] {scheduler_job.py:182} INFO - Started process (PID=110575) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:51:04,469] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:51:04,471] {logging_mixin.py:104} INFO - [2021-05-26 18:51:04,471] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:51:04,871] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:51:04,882] {logging_mixin.py:104} INFO - [2021-05-26 18:51:04,882] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:51:04,888] {logging_mixin.py:104} INFO - [2021-05-26 18:51:04,888] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:51:04,896] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.438 seconds
+[2021-05-26 18:51:34,917] {scheduler_job.py:182} INFO - Started process (PID=110643) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:51:34,918] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:51:34,918] {logging_mixin.py:104} INFO - [2021-05-26 18:51:34,918] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:51:35,281] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:51:35,295] {logging_mixin.py:104} INFO - [2021-05-26 18:51:35,295] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:51:35,303] {logging_mixin.py:104} INFO - [2021-05-26 18:51:35,303] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:51:35,312] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.397 seconds
+[2021-05-26 18:52:05,411] {scheduler_job.py:182} INFO - Started process (PID=110728) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:52:05,414] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:52:05,416] {logging_mixin.py:104} INFO - [2021-05-26 18:52:05,415] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:52:05,809] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:52:05,820] {logging_mixin.py:104} INFO - [2021-05-26 18:52:05,820] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:52:05,825] {logging_mixin.py:104} INFO - [2021-05-26 18:52:05,825] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:52:05,832] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.428 seconds
+[2021-05-26 18:52:35,926] {scheduler_job.py:182} INFO - Started process (PID=110805) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:52:35,927] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:52:35,928] {logging_mixin.py:104} INFO - [2021-05-26 18:52:35,928] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:52:36,382] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:52:36,394] {logging_mixin.py:104} INFO - [2021-05-26 18:52:36,394] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:52:36,402] {logging_mixin.py:104} INFO - [2021-05-26 18:52:36,402] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:52:36,409] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.485 seconds
+[2021-05-26 18:53:06,470] {scheduler_job.py:182} INFO - Started process (PID=110879) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:53:06,471] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:53:06,472] {logging_mixin.py:104} INFO - [2021-05-26 18:53:06,472] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:53:06,859] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:53:06,870] {logging_mixin.py:104} INFO - [2021-05-26 18:53:06,870] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:53:06,876] {logging_mixin.py:104} INFO - [2021-05-26 18:53:06,876] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:53:06,883] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.414 seconds
+[2021-05-26 18:53:36,943] {scheduler_job.py:182} INFO - Started process (PID=110963) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:53:36,944] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:53:36,944] {logging_mixin.py:104} INFO - [2021-05-26 18:53:36,944] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:53:37,307] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:53:37,318] {logging_mixin.py:104} INFO - [2021-05-26 18:53:37,318] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:53:37,324] {logging_mixin.py:104} INFO - [2021-05-26 18:53:37,324] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:53:37,331] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.390 seconds
+[2021-05-26 18:54:07,742] {scheduler_job.py:182} INFO - Started process (PID=111030) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:54:07,743] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:54:07,744] {logging_mixin.py:104} INFO - [2021-05-26 18:54:07,744] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:54:08,176] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:54:08,190] {logging_mixin.py:104} INFO - [2021-05-26 18:54:08,190] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:54:08,199] {logging_mixin.py:104} INFO - [2021-05-26 18:54:08,199] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:54:08,205] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.467 seconds
+[2021-05-26 18:54:38,445] {scheduler_job.py:182} INFO - Started process (PID=111114) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:54:38,449] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:54:38,450] {logging_mixin.py:104} INFO - [2021-05-26 18:54:38,450] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:54:38,849] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:54:38,860] {logging_mixin.py:104} INFO - [2021-05-26 18:54:38,860] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:54:38,866] {logging_mixin.py:104} INFO - [2021-05-26 18:54:38,866] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:54:38,872] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.433 seconds
+[2021-05-26 18:55:09,149] {scheduler_job.py:182} INFO - Started process (PID=111199) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:55:09,150] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:55:09,151] {logging_mixin.py:104} INFO - [2021-05-26 18:55:09,151] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:55:09,578] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:55:09,591] {logging_mixin.py:104} INFO - [2021-05-26 18:55:09,590] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:55:09,598] {logging_mixin.py:104} INFO - [2021-05-26 18:55:09,598] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:55:09,604] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.460 seconds
+[2021-05-26 18:55:39,707] {scheduler_job.py:182} INFO - Started process (PID=111267) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:55:39,708] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:55:39,709] {logging_mixin.py:104} INFO - [2021-05-26 18:55:39,709] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:55:40,118] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:55:40,128] {logging_mixin.py:104} INFO - [2021-05-26 18:55:40,128] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:55:40,135] {logging_mixin.py:104} INFO - [2021-05-26 18:55:40,135] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:55:40,140] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.436 seconds
+[2021-05-26 18:56:10,253] {scheduler_job.py:182} INFO - Started process (PID=111351) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:56:10,254] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:56:10,254] {logging_mixin.py:104} INFO - [2021-05-26 18:56:10,254] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:56:10,643] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:56:10,654] {logging_mixin.py:104} INFO - [2021-05-26 18:56:10,654] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:56:10,660] {logging_mixin.py:104} INFO - [2021-05-26 18:56:10,660] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:56:10,665] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.415 seconds
+[2021-05-26 18:56:40,751] {scheduler_job.py:182} INFO - Started process (PID=111435) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:56:40,752] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:56:40,753] {logging_mixin.py:104} INFO - [2021-05-26 18:56:40,753] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:56:41,130] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:56:41,141] {logging_mixin.py:104} INFO - [2021-05-26 18:56:41,141] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:56:41,147] {logging_mixin.py:104} INFO - [2021-05-26 18:56:41,147] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:56:41,153] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.405 seconds
+[2021-05-26 18:57:11,341] {scheduler_job.py:182} INFO - Started process (PID=111511) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:57:11,342] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:57:11,342] {logging_mixin.py:104} INFO - [2021-05-26 18:57:11,342] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:57:11,834] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:57:11,848] {logging_mixin.py:104} INFO - [2021-05-26 18:57:11,848] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:57:11,857] {logging_mixin.py:104} INFO - [2021-05-26 18:57:11,857] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:57:11,865] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.526 seconds
+[2021-05-26 18:57:42,245] {scheduler_job.py:182} INFO - Started process (PID=111586) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:57:42,246] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:57:42,246] {logging_mixin.py:104} INFO - [2021-05-26 18:57:42,246] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:57:42,627] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:57:42,638] {logging_mixin.py:104} INFO - [2021-05-26 18:57:42,638] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:57:42,646] {logging_mixin.py:104} INFO - [2021-05-26 18:57:42,646] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:57:42,654] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.411 seconds
+[2021-05-26 18:58:12,927] {scheduler_job.py:182} INFO - Started process (PID=111670) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:58:12,929] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:58:12,930] {logging_mixin.py:104} INFO - [2021-05-26 18:58:12,930] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:58:13,369] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:58:13,383] {logging_mixin.py:104} INFO - [2021-05-26 18:58:13,383] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:58:13,392] {logging_mixin.py:104} INFO - [2021-05-26 18:58:13,392] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:58:13,400] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.478 seconds
+[2021-05-26 18:58:43,969] {scheduler_job.py:182} INFO - Started process (PID=111747) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:58:43,969] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:58:43,970] {logging_mixin.py:104} INFO - [2021-05-26 18:58:43,969] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:58:44,343] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:58:44,356] {logging_mixin.py:104} INFO - [2021-05-26 18:58:44,356] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:58:44,365] {logging_mixin.py:104} INFO - [2021-05-26 18:58:44,365] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:58:44,372] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.405 seconds
+[2021-05-26 18:59:14,662] {scheduler_job.py:182} INFO - Started process (PID=111823) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:59:14,662] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:59:14,663] {logging_mixin.py:104} INFO - [2021-05-26 18:59:14,663] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:59:15,035] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:59:15,046] {logging_mixin.py:104} INFO - [2021-05-26 18:59:15,045] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:59:15,052] {logging_mixin.py:104} INFO - [2021-05-26 18:59:15,052] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:59:15,061] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.403 seconds
+[2021-05-26 18:59:45,225] {scheduler_job.py:182} INFO - Started process (PID=111910) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:59:45,227] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 18:59:45,227] {logging_mixin.py:104} INFO - [2021-05-26 18:59:45,227] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:59:45,604] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 18:59:45,615] {logging_mixin.py:104} INFO - [2021-05-26 18:59:45,615] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 18:59:45,621] {logging_mixin.py:104} INFO - [2021-05-26 18:59:45,621] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 18:59:45,627] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.405 seconds
+[2021-05-26 19:00:15,808] {scheduler_job.py:182} INFO - Started process (PID=111978) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:00:15,809] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:00:15,809] {logging_mixin.py:104} INFO - [2021-05-26 19:00:15,809] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:00:16,248] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:00:16,261] {logging_mixin.py:104} INFO - [2021-05-26 19:00:16,261] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:00:16,269] {logging_mixin.py:104} INFO - [2021-05-26 19:00:16,269] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:00:16,278] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.473 seconds
+[2021-05-26 19:00:46,506] {scheduler_job.py:182} INFO - Started process (PID=112063) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:00:46,508] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:00:46,510] {logging_mixin.py:104} INFO - [2021-05-26 19:00:46,510] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:00:46,915] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:00:46,926] {logging_mixin.py:104} INFO - [2021-05-26 19:00:46,926] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:00:46,932] {logging_mixin.py:104} INFO - [2021-05-26 19:00:46,932] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:00:46,939] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.440 seconds
+[2021-05-26 19:01:17,133] {scheduler_job.py:182} INFO - Started process (PID=112149) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:01:17,136] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:01:17,138] {logging_mixin.py:104} INFO - [2021-05-26 19:01:17,138] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:01:17,543] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:01:17,558] {logging_mixin.py:104} INFO - [2021-05-26 19:01:17,558] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:01:17,569] {logging_mixin.py:104} INFO - [2021-05-26 19:01:17,568] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:01:17,577] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.451 seconds
+[2021-05-26 19:01:47,658] {scheduler_job.py:182} INFO - Started process (PID=112216) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:01:47,659] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:01:47,660] {logging_mixin.py:104} INFO - [2021-05-26 19:01:47,660] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:01:48,055] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:01:48,067] {logging_mixin.py:104} INFO - [2021-05-26 19:01:48,067] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:01:48,075] {logging_mixin.py:104} INFO - [2021-05-26 19:01:48,075] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:01:48,081] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.426 seconds
+[2021-05-26 19:02:18,263] {scheduler_job.py:182} INFO - Started process (PID=112300) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:02:18,264] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:02:18,264] {logging_mixin.py:104} INFO - [2021-05-26 19:02:18,264] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:02:18,707] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:02:18,719] {logging_mixin.py:104} INFO - [2021-05-26 19:02:18,719] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:02:18,728] {logging_mixin.py:104} INFO - [2021-05-26 19:02:18,728] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:02:18,741] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.480 seconds
+[2021-05-26 19:02:49,026] {scheduler_job.py:182} INFO - Started process (PID=112385) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:02:49,028] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:02:49,028] {logging_mixin.py:104} INFO - [2021-05-26 19:02:49,028] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:02:49,414] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:02:49,425] {logging_mixin.py:104} INFO - [2021-05-26 19:02:49,425] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:02:49,432] {logging_mixin.py:104} INFO - [2021-05-26 19:02:49,432] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:02:49,439] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.415 seconds
+[2021-05-26 19:03:20,154] {scheduler_job.py:182} INFO - Started process (PID=112452) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:03:20,157] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:03:20,158] {logging_mixin.py:104} INFO - [2021-05-26 19:03:20,158] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:03:20,615] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:03:20,629] {logging_mixin.py:104} INFO - [2021-05-26 19:03:20,628] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:03:20,637] {logging_mixin.py:104} INFO - [2021-05-26 19:03:20,637] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:03:20,645] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.501 seconds
+[2021-05-26 19:03:51,314] {scheduler_job.py:182} INFO - Started process (PID=112536) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:03:51,315] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:03:51,316] {logging_mixin.py:104} INFO - [2021-05-26 19:03:51,316] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:03:51,705] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:03:51,716] {logging_mixin.py:104} INFO - [2021-05-26 19:03:51,716] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:03:51,723] {logging_mixin.py:104} INFO - [2021-05-26 19:03:51,723] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:03:51,733] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.422 seconds
+[2021-05-26 19:04:22,162] {scheduler_job.py:182} INFO - Started process (PID=112621) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:04:22,164] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:04:22,164] {logging_mixin.py:104} INFO - [2021-05-26 19:04:22,164] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:04:22,555] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:04:22,565] {logging_mixin.py:104} INFO - [2021-05-26 19:04:22,565] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:04:22,572] {logging_mixin.py:104} INFO - [2021-05-26 19:04:22,572] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:04:22,579] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.419 seconds
+[2021-05-26 19:04:52,851] {scheduler_job.py:182} INFO - Started process (PID=112688) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:04:52,853] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:04:52,853] {logging_mixin.py:104} INFO - [2021-05-26 19:04:52,853] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:04:53,247] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:04:53,258] {logging_mixin.py:104} INFO - [2021-05-26 19:04:53,258] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:04:53,265] {logging_mixin.py:104} INFO - [2021-05-26 19:04:53,265] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:04:53,270] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.423 seconds
+[2021-05-26 19:05:23,352] {scheduler_job.py:182} INFO - Started process (PID=112772) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:05:23,353] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:05:23,353] {logging_mixin.py:104} INFO - [2021-05-26 19:05:23,353] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:05:23,745] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:05:23,756] {logging_mixin.py:104} INFO - [2021-05-26 19:05:23,756] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:05:23,763] {logging_mixin.py:104} INFO - [2021-05-26 19:05:23,762] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:05:23,772] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.423 seconds
+[2021-05-26 19:05:53,850] {scheduler_job.py:182} INFO - Started process (PID=112856) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:05:53,851] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:05:53,851] {logging_mixin.py:104} INFO - [2021-05-26 19:05:53,851] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:05:54,219] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:05:54,231] {logging_mixin.py:104} INFO - [2021-05-26 19:05:54,231] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:05:54,237] {logging_mixin.py:104} INFO - [2021-05-26 19:05:54,237] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:05:54,244] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.396 seconds
+[2021-05-26 19:06:24,344] {scheduler_job.py:182} INFO - Started process (PID=112923) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:06:24,345] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:06:24,345] {logging_mixin.py:104} INFO - [2021-05-26 19:06:24,345] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:06:24,747] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:06:24,758] {logging_mixin.py:104} INFO - [2021-05-26 19:06:24,758] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:06:24,764] {logging_mixin.py:104} INFO - [2021-05-26 19:06:24,764] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:06:24,771] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.430 seconds
+[2021-05-26 19:06:55,041] {scheduler_job.py:182} INFO - Started process (PID=113008) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:06:55,042] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:06:55,043] {logging_mixin.py:104} INFO - [2021-05-26 19:06:55,043] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:06:55,423] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:06:55,434] {logging_mixin.py:104} INFO - [2021-05-26 19:06:55,434] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:06:55,440] {logging_mixin.py:104} INFO - [2021-05-26 19:06:55,440] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:06:55,447] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.409 seconds
+[2021-05-26 19:07:25,623] {scheduler_job.py:182} INFO - Started process (PID=113094) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:07:25,624] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:07:25,625] {logging_mixin.py:104} INFO - [2021-05-26 19:07:25,625] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:07:26,010] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:07:26,021] {logging_mixin.py:104} INFO - [2021-05-26 19:07:26,021] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:07:26,027] {logging_mixin.py:104} INFO - [2021-05-26 19:07:26,027] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:07:26,035] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.414 seconds
+[2021-05-26 19:07:56,133] {scheduler_job.py:182} INFO - Started process (PID=113161) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:07:56,134] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:07:56,134] {logging_mixin.py:104} INFO - [2021-05-26 19:07:56,134] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:07:56,516] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:07:56,527] {logging_mixin.py:104} INFO - [2021-05-26 19:07:56,527] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:07:56,533] {logging_mixin.py:104} INFO - [2021-05-26 19:07:56,533] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:07:56,540] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.410 seconds
+[2021-05-26 19:08:26,744] {scheduler_job.py:182} INFO - Started process (PID=113246) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:08:26,746] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:08:26,748] {logging_mixin.py:104} INFO - [2021-05-26 19:08:26,748] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:08:27,135] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:08:27,145] {logging_mixin.py:104} INFO - [2021-05-26 19:08:27,145] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:08:27,151] {logging_mixin.py:104} INFO - [2021-05-26 19:08:27,151] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:08:27,159] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.422 seconds
+[2021-05-26 19:08:57,271] {scheduler_job.py:182} INFO - Started process (PID=113331) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:08:57,272] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:08:57,273] {logging_mixin.py:104} INFO - [2021-05-26 19:08:57,273] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:08:57,664] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:08:57,675] {logging_mixin.py:104} INFO - [2021-05-26 19:08:57,675] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:08:57,681] {logging_mixin.py:104} INFO - [2021-05-26 19:08:57,681] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:08:57,688] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.420 seconds
+[2021-05-26 19:09:27,881] {scheduler_job.py:182} INFO - Started process (PID=113398) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:09:27,882] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:09:27,882] {logging_mixin.py:104} INFO - [2021-05-26 19:09:27,882] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:09:28,280] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:09:28,293] {logging_mixin.py:104} INFO - [2021-05-26 19:09:28,293] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:09:28,301] {logging_mixin.py:104} INFO - [2021-05-26 19:09:28,301] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:09:28,308] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.430 seconds
+[2021-05-26 19:09:58,439] {scheduler_job.py:182} INFO - Started process (PID=113484) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:09:58,441] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:09:58,441] {logging_mixin.py:104} INFO - [2021-05-26 19:09:58,441] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:09:58,833] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:09:58,848] {logging_mixin.py:104} INFO - [2021-05-26 19:09:58,848] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:09:58,858] {logging_mixin.py:104} INFO - [2021-05-26 19:09:58,858] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:09:58,867] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.430 seconds
+[2021-05-26 19:10:29,064] {scheduler_job.py:182} INFO - Started process (PID=113569) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:10:29,065] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:10:29,066] {logging_mixin.py:104} INFO - [2021-05-26 19:10:29,066] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:10:29,435] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:10:29,446] {logging_mixin.py:104} INFO - [2021-05-26 19:10:29,446] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:10:29,452] {logging_mixin.py:104} INFO - [2021-05-26 19:10:29,452] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:10:29,458] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.396 seconds
+[2021-05-26 19:10:59,669] {scheduler_job.py:182} INFO - Started process (PID=113646) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:10:59,670] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:10:59,670] {logging_mixin.py:104} INFO - [2021-05-26 19:10:59,670] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:11:00,030] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:11:00,042] {logging_mixin.py:104} INFO - [2021-05-26 19:11:00,042] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:11:00,050] {logging_mixin.py:104} INFO - [2021-05-26 19:11:00,050] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:11:00,056] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.389 seconds
+[2021-05-26 19:11:30,155] {scheduler_job.py:182} INFO - Started process (PID=113722) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:11:30,156] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:11:30,157] {logging_mixin.py:104} INFO - [2021-05-26 19:11:30,157] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:11:30,524] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:11:30,535] {logging_mixin.py:104} INFO - [2021-05-26 19:11:30,535] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:11:30,541] {logging_mixin.py:104} INFO - [2021-05-26 19:11:30,541] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:11:30,548] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.395 seconds
+[2021-05-26 19:12:01,425] {scheduler_job.py:182} INFO - Started process (PID=113808) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:12:01,427] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:12:01,429] {logging_mixin.py:104} INFO - [2021-05-26 19:12:01,428] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:12:01,832] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:12:01,844] {logging_mixin.py:104} INFO - [2021-05-26 19:12:01,844] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:12:01,850] {logging_mixin.py:104} INFO - [2021-05-26 19:12:01,850] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:12:01,855] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.438 seconds
+[2021-05-26 19:12:32,014] {scheduler_job.py:182} INFO - Started process (PID=113893) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:12:32,015] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:12:32,015] {logging_mixin.py:104} INFO - [2021-05-26 19:12:32,015] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:12:32,405] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:12:32,417] {logging_mixin.py:104} INFO - [2021-05-26 19:12:32,417] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:12:32,424] {logging_mixin.py:104} INFO - [2021-05-26 19:12:32,424] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:12:32,431] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.418 seconds
+[2021-05-26 19:13:02,519] {scheduler_job.py:182} INFO - Started process (PID=113961) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:13:02,519] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:13:02,520] {logging_mixin.py:104} INFO - [2021-05-26 19:13:02,520] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:13:02,911] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:13:02,922] {logging_mixin.py:104} INFO - [2021-05-26 19:13:02,921] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:13:02,928] {logging_mixin.py:104} INFO - [2021-05-26 19:13:02,928] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:13:02,937] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.421 seconds
+[2021-05-26 19:13:33,115] {scheduler_job.py:182} INFO - Started process (PID=114046) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:13:33,115] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:13:33,116] {logging_mixin.py:104} INFO - [2021-05-26 19:13:33,116] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:13:33,483] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:13:33,494] {logging_mixin.py:104} INFO - [2021-05-26 19:13:33,494] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:13:33,500] {logging_mixin.py:104} INFO - [2021-05-26 19:13:33,500] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:13:33,507] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.395 seconds
+[2021-05-26 19:14:03,572] {scheduler_job.py:182} INFO - Started process (PID=114131) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:14:03,573] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:14:03,574] {logging_mixin.py:104} INFO - [2021-05-26 19:14:03,573] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:14:03,950] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:14:03,961] {logging_mixin.py:104} INFO - [2021-05-26 19:14:03,961] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:14:03,967] {logging_mixin.py:104} INFO - [2021-05-26 19:14:03,967] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:14:03,973] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.404 seconds
+[2021-05-26 19:14:34,014] {scheduler_job.py:182} INFO - Started process (PID=114199) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:14:34,015] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:14:34,015] {logging_mixin.py:104} INFO - [2021-05-26 19:14:34,015] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:14:34,399] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:14:34,410] {logging_mixin.py:104} INFO - [2021-05-26 19:14:34,410] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:14:34,416] {logging_mixin.py:104} INFO - [2021-05-26 19:14:34,416] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:14:34,422] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.411 seconds
+[2021-05-26 19:15:04,446] {scheduler_job.py:182} INFO - Started process (PID=114284) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:15:04,447] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:15:04,448] {logging_mixin.py:104} INFO - [2021-05-26 19:15:04,448] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:15:04,832] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:15:04,842] {logging_mixin.py:104} INFO - [2021-05-26 19:15:04,842] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:15:04,848] {logging_mixin.py:104} INFO - [2021-05-26 19:15:04,848] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:15:04,854] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.411 seconds
+[2021-05-26 19:15:35,065] {scheduler_job.py:182} INFO - Started process (PID=114369) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:15:35,066] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:15:35,067] {logging_mixin.py:104} INFO - [2021-05-26 19:15:35,067] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:15:35,439] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:15:35,450] {logging_mixin.py:104} INFO - [2021-05-26 19:15:35,450] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:15:35,456] {logging_mixin.py:104} INFO - [2021-05-26 19:15:35,456] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:15:35,463] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.401 seconds
+[2021-05-26 19:16:05,600] {scheduler_job.py:182} INFO - Started process (PID=114436) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:16:05,601] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:16:05,601] {logging_mixin.py:104} INFO - [2021-05-26 19:16:05,601] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:16:05,965] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:16:05,975] {logging_mixin.py:104} INFO - [2021-05-26 19:16:05,975] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:16:05,981] {logging_mixin.py:104} INFO - [2021-05-26 19:16:05,981] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:16:05,988] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.391 seconds
+[2021-05-26 19:16:36,044] {scheduler_job.py:182} INFO - Started process (PID=114522) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:16:36,045] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:16:36,046] {logging_mixin.py:104} INFO - [2021-05-26 19:16:36,046] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:16:36,420] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:16:36,431] {logging_mixin.py:104} INFO - [2021-05-26 19:16:36,431] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:16:36,437] {logging_mixin.py:104} INFO - [2021-05-26 19:16:36,437] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:16:36,443] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.402 seconds
+[2021-05-26 19:17:06,508] {scheduler_job.py:182} INFO - Started process (PID=114607) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:17:06,509] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:17:06,509] {logging_mixin.py:104} INFO - [2021-05-26 19:17:06,509] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:17:06,889] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:17:06,899] {logging_mixin.py:104} INFO - [2021-05-26 19:17:06,899] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:17:06,905] {logging_mixin.py:104} INFO - [2021-05-26 19:17:06,905] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:17:06,911] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.406 seconds
+[2021-05-26 19:17:36,996] {scheduler_job.py:182} INFO - Started process (PID=114676) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:17:36,997] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:17:36,998] {logging_mixin.py:104} INFO - [2021-05-26 19:17:36,998] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:17:37,390] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:17:37,401] {logging_mixin.py:104} INFO - [2021-05-26 19:17:37,401] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:17:37,407] {logging_mixin.py:104} INFO - [2021-05-26 19:17:37,407] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:17:37,414] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.421 seconds
+[2021-05-26 19:18:08,280] {scheduler_job.py:182} INFO - Started process (PID=114762) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:18:08,281] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:18:08,282] {logging_mixin.py:104} INFO - [2021-05-26 19:18:08,282] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:18:08,668] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:18:08,679] {logging_mixin.py:104} INFO - [2021-05-26 19:18:08,679] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:18:08,685] {logging_mixin.py:104} INFO - [2021-05-26 19:18:08,685] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:18:08,692] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.414 seconds
+[2021-05-26 19:18:38,753] {scheduler_job.py:182} INFO - Started process (PID=114847) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:18:38,754] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:18:38,754] {logging_mixin.py:104} INFO - [2021-05-26 19:18:38,754] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:18:39,155] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:18:39,166] {logging_mixin.py:104} INFO - [2021-05-26 19:18:39,166] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:18:39,172] {logging_mixin.py:104} INFO - [2021-05-26 19:18:39,172] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:18:39,181] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.430 seconds
+[2021-05-26 19:19:09,330] {scheduler_job.py:182} INFO - Started process (PID=114925) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:19:09,331] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:19:09,331] {logging_mixin.py:104} INFO - [2021-05-26 19:19:09,331] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:19:09,699] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:19:09,712] {logging_mixin.py:104} INFO - [2021-05-26 19:19:09,712] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:19:09,720] {logging_mixin.py:104} INFO - [2021-05-26 19:19:09,720] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:19:09,727] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.399 seconds
+[2021-05-26 19:19:39,910] {scheduler_job.py:182} INFO - Started process (PID=114999) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:19:39,911] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:19:39,912] {logging_mixin.py:104} INFO - [2021-05-26 19:19:39,912] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:19:40,306] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:19:40,317] {logging_mixin.py:104} INFO - [2021-05-26 19:19:40,317] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:19:40,323] {logging_mixin.py:104} INFO - [2021-05-26 19:19:40,323] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:19:40,329] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.422 seconds
+[2021-05-26 19:20:10,487] {scheduler_job.py:182} INFO - Started process (PID=115085) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:20:10,489] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:20:10,490] {logging_mixin.py:104} INFO - [2021-05-26 19:20:10,490] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:20:10,866] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:20:10,876] {logging_mixin.py:104} INFO - [2021-05-26 19:20:10,876] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:20:10,882] {logging_mixin.py:104} INFO - [2021-05-26 19:20:10,882] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:20:10,890] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.405 seconds
+[2021-05-26 19:20:40,916] {scheduler_job.py:182} INFO - Started process (PID=115171) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:20:40,917] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:20:40,917] {logging_mixin.py:104} INFO - [2021-05-26 19:20:40,917] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:20:41,309] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:20:41,320] {logging_mixin.py:104} INFO - [2021-05-26 19:20:41,320] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:20:41,326] {logging_mixin.py:104} INFO - [2021-05-26 19:20:41,326] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:20:41,333] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.418 seconds
+[2021-05-26 19:21:11,463] {scheduler_job.py:182} INFO - Started process (PID=115238) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:21:11,464] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:21:11,464] {logging_mixin.py:104} INFO - [2021-05-26 19:21:11,464] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:21:11,831] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:21:11,841] {logging_mixin.py:104} INFO - [2021-05-26 19:21:11,841] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:21:11,847] {logging_mixin.py:104} INFO - [2021-05-26 19:21:11,847] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:21:11,854] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.393 seconds
+[2021-05-26 19:21:41,904] {scheduler_job.py:182} INFO - Started process (PID=115322) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:21:41,905] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:21:41,905] {logging_mixin.py:104} INFO - [2021-05-26 19:21:41,905] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:21:42,274] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:21:42,284] {logging_mixin.py:104} INFO - [2021-05-26 19:21:42,284] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:21:42,290] {logging_mixin.py:104} INFO - [2021-05-26 19:21:42,290] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:21:42,298] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.397 seconds
+[2021-05-26 19:22:12,327] {scheduler_job.py:182} INFO - Started process (PID=115407) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:22:12,328] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:22:12,328] {logging_mixin.py:104} INFO - [2021-05-26 19:22:12,328] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:22:12,706] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:22:12,716] {logging_mixin.py:104} INFO - [2021-05-26 19:22:12,716] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:22:12,722] {logging_mixin.py:104} INFO - [2021-05-26 19:22:12,722] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:22:12,729] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.405 seconds
+[2021-05-26 19:22:42,859] {scheduler_job.py:182} INFO - Started process (PID=115475) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:22:42,860] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:22:42,861] {logging_mixin.py:104} INFO - [2021-05-26 19:22:42,861] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:22:43,238] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:22:43,249] {logging_mixin.py:104} INFO - [2021-05-26 19:22:43,249] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:22:43,255] {logging_mixin.py:104} INFO - [2021-05-26 19:22:43,255] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:22:43,260] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.404 seconds
+[2021-05-26 19:23:13,416] {scheduler_job.py:182} INFO - Started process (PID=115559) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:23:13,417] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:23:13,417] {logging_mixin.py:104} INFO - [2021-05-26 19:23:13,417] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:23:13,796] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:23:13,852] {logging_mixin.py:104} INFO - [2021-05-26 19:23:13,852] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:23:13,859] {logging_mixin.py:104} INFO - [2021-05-26 19:23:13,859] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:23:13,867] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.454 seconds
+[2021-05-26 19:23:44,021] {scheduler_job.py:182} INFO - Started process (PID=115645) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:23:44,022] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:23:44,022] {logging_mixin.py:104} INFO - [2021-05-26 19:23:44,022] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:23:44,406] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:23:44,417] {logging_mixin.py:104} INFO - [2021-05-26 19:23:44,417] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:23:44,423] {logging_mixin.py:104} INFO - [2021-05-26 19:23:44,423] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:23:44,430] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.412 seconds
+[2021-05-26 19:24:14,761] {scheduler_job.py:182} INFO - Started process (PID=115712) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:24:14,762] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:24:14,762] {logging_mixin.py:104} INFO - [2021-05-26 19:24:14,762] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:24:15,131] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:24:15,142] {logging_mixin.py:104} INFO - [2021-05-26 19:24:15,142] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:24:15,148] {logging_mixin.py:104} INFO - [2021-05-26 19:24:15,148] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:24:15,155] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.396 seconds
+[2021-05-26 19:24:45,284] {scheduler_job.py:182} INFO - Started process (PID=115797) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:24:45,285] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:24:45,286] {logging_mixin.py:104} INFO - [2021-05-26 19:24:45,286] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:24:45,690] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:24:45,702] {logging_mixin.py:104} INFO - [2021-05-26 19:24:45,702] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:24:45,710] {logging_mixin.py:104} INFO - [2021-05-26 19:24:45,710] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:24:45,716] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.434 seconds
+[2021-05-26 19:25:15,900] {scheduler_job.py:182} INFO - Started process (PID=115882) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:25:15,901] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:25:15,901] {logging_mixin.py:104} INFO - [2021-05-26 19:25:15,901] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:25:16,269] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:25:16,280] {logging_mixin.py:104} INFO - [2021-05-26 19:25:16,280] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:25:16,286] {logging_mixin.py:104} INFO - [2021-05-26 19:25:16,286] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:25:16,294] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.397 seconds
+[2021-05-26 19:25:46,336] {scheduler_job.py:182} INFO - Started process (PID=115950) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:25:46,337] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:25:46,337] {logging_mixin.py:104} INFO - [2021-05-26 19:25:46,337] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:25:46,712] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:25:46,723] {logging_mixin.py:104} INFO - [2021-05-26 19:25:46,723] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:25:46,729] {logging_mixin.py:104} INFO - [2021-05-26 19:25:46,729] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:25:46,738] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.405 seconds
+[2021-05-26 19:26:16,831] {scheduler_job.py:182} INFO - Started process (PID=116035) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:26:16,832] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:26:16,833] {logging_mixin.py:104} INFO - [2021-05-26 19:26:16,833] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:26:17,207] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:26:17,217] {logging_mixin.py:104} INFO - [2021-05-26 19:26:17,217] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:26:17,223] {logging_mixin.py:104} INFO - [2021-05-26 19:26:17,223] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:26:17,230] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.402 seconds
+[2021-05-26 19:26:47,262] {scheduler_job.py:182} INFO - Started process (PID=116119) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:26:47,263] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:26:47,264] {logging_mixin.py:104} INFO - [2021-05-26 19:26:47,264] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:26:47,640] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:26:47,650] {logging_mixin.py:104} INFO - [2021-05-26 19:26:47,650] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:26:47,656] {logging_mixin.py:104} INFO - [2021-05-26 19:26:47,656] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:26:47,662] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.402 seconds
+[2021-05-26 19:27:17,901] {scheduler_job.py:182} INFO - Started process (PID=116186) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:27:17,901] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:27:17,902] {logging_mixin.py:104} INFO - [2021-05-26 19:27:17,902] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:27:18,250] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:27:18,263] {logging_mixin.py:104} INFO - [2021-05-26 19:27:18,263] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:27:18,270] {logging_mixin.py:104} INFO - [2021-05-26 19:27:18,270] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:27:18,278] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.379 seconds
+[2021-05-26 19:27:48,393] {scheduler_job.py:182} INFO - Started process (PID=116270) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:27:48,394] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:27:48,394] {logging_mixin.py:104} INFO - [2021-05-26 19:27:48,394] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:27:48,774] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:27:48,785] {logging_mixin.py:104} INFO - [2021-05-26 19:27:48,785] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:27:48,791] {logging_mixin.py:104} INFO - [2021-05-26 19:27:48,791] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:27:48,800] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.410 seconds
+[2021-05-26 19:28:18,993] {scheduler_job.py:182} INFO - Started process (PID=116355) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:28:18,994] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:28:18,995] {logging_mixin.py:104} INFO - [2021-05-26 19:28:18,994] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:28:19,373] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:28:19,384] {logging_mixin.py:104} INFO - [2021-05-26 19:28:19,384] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:28:19,390] {logging_mixin.py:104} INFO - [2021-05-26 19:28:19,390] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:28:19,396] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.405 seconds
+[2021-05-26 19:28:50,225] {scheduler_job.py:182} INFO - Started process (PID=116433) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:28:50,226] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:28:50,226] {logging_mixin.py:104} INFO - [2021-05-26 19:28:50,226] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:28:50,603] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:28:50,616] {logging_mixin.py:104} INFO - [2021-05-26 19:28:50,616] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:28:50,623] {logging_mixin.py:104} INFO - [2021-05-26 19:28:50,623] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:28:50,630] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.407 seconds
+[2021-05-26 19:29:20,738] {scheduler_job.py:182} INFO - Started process (PID=116509) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:29:20,739] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:29:20,740] {logging_mixin.py:104} INFO - [2021-05-26 19:29:20,740] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:29:21,104] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:29:21,115] {logging_mixin.py:104} INFO - [2021-05-26 19:29:21,115] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:29:21,121] {logging_mixin.py:104} INFO - [2021-05-26 19:29:21,121] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:29:21,128] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.393 seconds
+[2021-05-26 19:29:51,336] {scheduler_job.py:182} INFO - Started process (PID=116594) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:29:51,337] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:29:51,338] {logging_mixin.py:104} INFO - [2021-05-26 19:29:51,338] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:29:51,713] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:29:51,725] {logging_mixin.py:104} INFO - [2021-05-26 19:29:51,724] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:29:51,731] {logging_mixin.py:104} INFO - [2021-05-26 19:29:51,731] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:29:51,738] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.404 seconds
+[2021-05-26 19:30:21,808] {scheduler_job.py:182} INFO - Started process (PID=116674) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:30:21,808] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:30:21,809] {logging_mixin.py:104} INFO - [2021-05-26 19:30:21,809] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:30:22,197] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:30:22,208] {logging_mixin.py:104} INFO - [2021-05-26 19:30:22,208] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:30:22,214] {logging_mixin.py:104} INFO - [2021-05-26 19:30:22,214] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:30:22,222] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.416 seconds
+[2021-05-26 19:30:52,437] {scheduler_job.py:182} INFO - Started process (PID=116748) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:30:52,438] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:30:52,438] {logging_mixin.py:104} INFO - [2021-05-26 19:30:52,438] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:30:52,811] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:30:52,821] {logging_mixin.py:104} INFO - [2021-05-26 19:30:52,821] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:30:52,827] {logging_mixin.py:104} INFO - [2021-05-26 19:30:52,827] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:30:52,834] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.400 seconds
+[2021-05-26 19:31:22,983] {scheduler_job.py:182} INFO - Started process (PID=116833) to work on /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:31:22,984] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/dag_transfers_scraping.py for tasks to queue
+[2021-05-26 19:31:22,984] {logging_mixin.py:104} INFO - [2021-05-26 19:31:22,984] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:31:23,362] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['dag_transfers_scraping']) retrieved from /opt/airflow/dags/dag_transfers_scraping.py
+[2021-05-26 19:31:23,373] {logging_mixin.py:104} INFO - [2021-05-26 19:31:23,373] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-05-26 19:31:23,379] {logging_mixin.py:104} INFO - [2021-05-26 19:31:23,379] {dag.py:2305} INFO - Setting next_dagrun for dag_transfers_scraping to None
+[2021-05-26 19:31:23,384] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_transfers_scraping.py took 0.404 seconds

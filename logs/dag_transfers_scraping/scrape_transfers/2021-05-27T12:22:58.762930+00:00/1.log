@@ -1,0 +1,41 @@
+[2021-05-27 12:23:00,918] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: dag_transfers_scraping.scrape_transfers 2021-05-27T12:22:58.762930+00:00 [queued]>
+[2021-05-27 12:23:00,930] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: dag_transfers_scraping.scrape_transfers 2021-05-27T12:22:58.762930+00:00 [queued]>
+[2021-05-27 12:23:00,930] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-05-27 12:23:00,930] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-05-27 12:23:00,930] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-05-27 12:23:00,937] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): scrape_transfers> on 2021-05-27T12:22:58.762930+00:00
+[2021-05-27 12:23:00,942] {standard_task_runner.py:52} INFO - Started process 66717 to run task
+[2021-05-27 12:23:00,945] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'dag_transfers_scraping', 'scrape_transfers', '2021-05-27T12:22:58.762930+00:00', '--job-id', '53', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/dag_transfers_scraping.py', '--cfg-path', '/tmp/tmpnii1vdfn', '--error-file', '/tmp/tmp9pvnowo1']
+[2021-05-27 12:23:00,946] {standard_task_runner.py:77} INFO - Job 53: Subtask scrape_transfers
+[2021-05-27 12:23:00,994] {logging_mixin.py:104} INFO - Running <TaskInstance: dag_transfers_scraping.scrape_transfers 2021-05-27T12:22:58.762930+00:00 [running]> on host f7393dd572fa
+[2021-05-27 12:23:01,048] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=dag_transfers_scraping
+AIRFLOW_CTX_TASK_ID=scrape_transfers
+AIRFLOW_CTX_EXECUTION_DATE=2021-05-27T12:22:58.762930+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-05-27T12:22:58.762930+00:00
+[2021-05-27 12:23:01,049] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 148, in execute
+    self.op_kwargs = determine_kwargs(self.python_callable, self.op_args, context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/operator_helpers.py", line 109, in determine_kwargs
+    signature = inspect.signature(func)
+  File "/usr/local/lib/python3.6/inspect.py", line 3065, in signature
+    return Signature.from_callable(obj, follow_wrapped=follow_wrapped)
+  File "/usr/local/lib/python3.6/inspect.py", line 2815, in from_callable
+    follow_wrapper_chains=follow_wrapped)
+  File "/usr/local/lib/python3.6/inspect.py", line 2205, in _signature_from_callable
+    return _signature_bound_method(sig)
+  File "/usr/local/lib/python3.6/inspect.py", line 1795, in _signature_bound_method
+    raise ValueError('invalid method signature')
+ValueError: invalid method signature
+[2021-05-27 12:23:01,052] {taskinstance.py:1531} INFO - Marking task as FAILED. dag_id=dag_transfers_scraping, task_id=scrape_transfers, execution_date=20210527T122258, start_date=20210527T122300, end_date=20210527T122301
+[2021-05-27 12:23:01,076] {local_task_job.py:151} INFO - Task exited with return code 1
