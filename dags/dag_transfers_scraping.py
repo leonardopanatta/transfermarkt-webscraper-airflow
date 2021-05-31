@@ -16,7 +16,7 @@ default_args = {
 with DAG(
     dag_id="dag_transfers_scraping",
     default_args=default_args,
-    schedule_interval="@hourly",
+    schedule_interval="@daily",
     tags=['transfermarkt'],
 ) as dag:
 

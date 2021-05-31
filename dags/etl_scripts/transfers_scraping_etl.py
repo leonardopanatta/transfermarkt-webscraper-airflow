@@ -94,7 +94,8 @@ class TransfersScrapingETL():
         output_dir = Path(self.local_data_path)
         output_dir.mkdir(parents=True, exist_ok=True)
 
-        file_name = self.s3_file_name_prefix + datetime.now().strftime("%Y_%m_%d_%H_%M_%S") + ".csv"
+        #file_name = self.s3_file_name_prefix + datetime.now().strftime("%Y_%m_%d_%H_%M_%S") + ".csv"
+        file_name = self.s3_file_name_prefix + datetime.now().strftime("%Y_%m_%d") + ".csv"
         file_path = self.local_data_path + file_name
 
         df.to_csv(file_path, index = False)
