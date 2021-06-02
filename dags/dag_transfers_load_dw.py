@@ -6,9 +6,13 @@ from airflow.operators.python import PythonOperator
 
 from airflow.providers.amazon.aws.sensors.s3_key import S3KeySensor
 
+from etl_scripts.transfers_dw_etl import TransfersDWETL
+
+transfers_dw_etl = TransfersDWETL()
+
 default_args = {
     "owner": "airflow",
-    "start_date": datetime(2021, 5, 28, 16, 10)
+    "start_date": datetime(2021, 6, 1, 15, 0)
 }
 
 def new_file_detection():
@@ -34,6 +38,11 @@ with DAG(
         aws_conn_id = "aws_s3_airflow_user"
     )
 
+    print_csv = PythonOperator(
+        task_id='print_csv',
+        python_callable=transfers_dw_etl.etl_clubs
+    )
+
     print_message = PythonOperator(
         task_id='print_message',
         python_callable=new_file_detection
@@ -41,4 +50,4 @@ with DAG(
 
     end_pipeline = DummyOperator(task_id="end_pipeline")
 
-    wait_for_CSV_load_onto_S3 >> print_message >> end_pipeline
+    wait_for_CSV_load_onto_S3 >> print_csv >> end_pipeline
