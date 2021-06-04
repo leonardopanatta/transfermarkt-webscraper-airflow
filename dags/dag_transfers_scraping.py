@@ -27,6 +27,22 @@ with DAG(
         python_callable=transfers_scraping_etl.scrape_transfers
     )
 
+    scrape_latest_transfers_from_brazil = PythonOperator(
+        task_id='scrape_latest_transfers_from_brazil',
+        python_callable=transfers_scraping_etl.scrape_latest_transfers,
+        op_kwargs={
+            "clubs_from_country": "brazil"
+        }
+    )
+
+    scrape_latest_transfers_from_england = PythonOperator(
+        task_id='scrape_latest_transfers_from_england',
+        python_callable=transfers_scraping_etl.scrape_latest_transfers,
+        op_kwargs={
+            "clubs_from_country": "england"
+        }
+    )
+
     load_transfers_CSV_to_S3 = PythonOperator(
         task_id='load_transfers_CSV_to_S3',
         python_callable=transfers_scraping_etl.load_CSV_on_S3,
@@ -42,4 +58,4 @@ with DAG(
 
     end_pipeline = DummyOperator(task_id="end_pipeline")
 
-    start_pipeline >> scrape_transfers >> load_transfers_CSV_to_S3 >> delete_local_CSV_files >> end_pipeline
+    start_pipeline >> scrape_latest_transfers_from_brazil >> scrape_latest_transfers_from_england >> load_transfers_CSV_to_S3 >> delete_local_CSV_files >> end_pipeline
