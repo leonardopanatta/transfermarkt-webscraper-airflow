@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from airflow import DAG
 from datetime import datetime, timedelta
+from airflow.utils.dates import days_ago
 from airflow.operators.dummy import DummyOperator
 from airflow.operators.python import PythonOperator
 
@@ -12,7 +13,7 @@ transfers_dw_etl = TransfersDWETL()
 
 default_args = {
     "owner": "airflow",
-    "start_date": datetime(2021, 6, 1, 15, 0)
+    "start_date": days_ago(1),
 }
 
 def new_file_detection():
@@ -34,7 +35,7 @@ with DAG(
 
     wait_for_CSV_load_onto_S3 = S3KeySensor(
         task_id="wait_for_CSV_load_onto_S3",
-        bucket_key="s3://datalake-transfermarkt-sa-east-1/transfers/transfers_2021_05_28.csv",
+        bucket_key="s3://datalake-transfermarkt-sa-east-1/latest_transfers/latest_transfers_brazil_2021_06_07.csv",
         aws_conn_id = "aws_s3_airflow_user"
     )
 

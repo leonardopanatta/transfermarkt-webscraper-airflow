@@ -6,9 +6,9 @@ class TransfersDWETL():
 
     def __init__(self):
         self.s3 = S3Hook('aws_s3_airflow_user')
-        self.s3_transfers_csv_file = self.s3.get_key(key="transfers/transfers_2021_05_28.csv", bucket_name="datalake-transfermarkt-sa-east-1")
+        self.s3_transfers_csv_file = self.s3.get_key(key="latest_transfers/latest_transfers_brazil_2021_06_07.csv", bucket_name="datalake-transfermarkt-sa-east-1")
         self.s3_bucket_name = "datalake-transfermarkt-sa-east-1"
-        self.s3_bucket_folder = "transfers/"
+        self.s3_bucket_folder = "latest_transfers/"
         self.s3_file_name_prefix = "transfers_"
 
     def clean_currency(x):
@@ -21,7 +21,7 @@ class TransfersDWETL():
 
     def etl_clubs(self):
         df = pd.read_csv(self.s3_transfers_csv_file.get()["Body"])
-        print(df.head())
+        print(df["transfer_fee"])
 
     #def etl_seasons(self):
 
